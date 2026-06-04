@@ -28,4 +28,4 @@ jobs:
         run: dotnet publish -c Release -o publish
 
       - name: Simulate Deploy to TEST
-  run: echo "Deploying application to TEST environment"
+        run: echo "Deploying application to TEST environment"
