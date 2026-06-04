@@ -28,3 +28,5 @@
 /Users/charloncurmi/Documents/CHC/Jobs Interview/APS/APS-DevOps-Task/APSBankDemo/obj/Debug/net7.0/APSBankDemo.pdb
 /Users/charloncurmi/Documents/CHC/Jobs Interview/APS/APS-DevOps-Task/APSBankDemo/obj/Debug/net7.0/APSBankDemo.genruntimeconfig.cache
 /Users/charloncurmi/Documents/CHC/Jobs Interview/APS/APS-DevOps-Task/APSBankDemo/obj/Debug/net7.0/ref/APSBankDemo.dll
+/Users/charloncurmi/Documents/CHC/Jobs Interview/APS/APS-DevOps-Task/APSBankDemo/bin/Debug/net7.0/appsettings.Production.json
+/Users/charloncurmi/Documents/CHC/Jobs Interview/APS/APS-DevOps-Task/APSBankDemo/bin/Debug/net7.0/appsettings.Test.json

@@ -9,6 +9,9 @@ jobs:
   deploy-test:
     runs-on: ubuntu-latest
 
+    environment:
+      name: Test
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -29,3 +32,32 @@ jobs:
 
       - name: Simulate Deploy to TEST
         run: echo "Deploying application to TEST environment"
+
+  deploy-production:
+    runs-on: ubuntu-latest
+
+    needs: deploy-test
+
+    environment:
+      name: Production
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Restore
+        run: dotnet restore
+
+      - name: Build
+        run: dotnet build --configuration Release
+
+      - name: Publish
+        run: dotnet publish -c Release -o publish
+
+      - name: Simulate Deploy to PRODUCTION
+        run: echo "Deploying application to PRODUCTION environment"
